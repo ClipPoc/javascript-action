@@ -1,16 +1,13 @@
-name: 'hola mundo'
-description: 'escribe un nombre y saluda'
-
+name: 'Hello World'
+description: 'Greet someone and record the time'
 inputs:
-  who-to-greet:
-    description: 'who to greet'
-    required: false
-    default: 'mundo'
-
+  who-to-greet:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
 outputs:
-  time:
-    description: 'Hora del saludo'
-
+  time: # id of output
+    description: 'The time we greeted you'
 runs:
-  using: 'node16' 
-  main: 'dits/index.js'
+  using: 'node16'
+  main: 'dist/index.js'
